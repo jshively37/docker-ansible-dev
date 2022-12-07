@@ -21,3 +21,4 @@ RUN pip install --upgrade pip \
 
 RUN mkdir -p /data/
 WORKDIR /data
+USER $USERNAME
