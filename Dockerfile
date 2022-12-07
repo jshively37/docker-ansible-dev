@@ -11,8 +11,7 @@ ENV ANSIBLE_CALLABLE_WHITELIST=profile_tasks
 COPY requirements*.txt /home/$USERNAME/
 
 RUN apt update
-RUN apt install -y python3 \
-    && apt install -y python3-pip
+RUN apt install -y python3 python3-pip git
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
