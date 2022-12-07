@@ -19,3 +19,6 @@ RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN pip install --upgrade pip \
     && pip install --upgrade virtualenv \
     && pip install -r /home/$USERNAME/requirements.txt
+
+RUN mkdir -p /data/
+WORKDIR /data
